@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTARTE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#home" class="scroll-link">Home</a>
+        <a href="#about-us" class="scroll-link">About Us</a>
+        <a href="#features" class="scroll-link">Features</a>
+        <a href="#how-it-works" class="scroll-link"> How It Works</a>
+        <a href="#contact-us" class="scroll-link">Contact Us</a>
+    </nav>
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Maximize Communication and Update Your Farm's Status Constantly</h1>
+            <p>Our product is designed to solve the miscommunication and tracking/monitoring problems in tomato farms.
+                Say goodbye to missed updates and misunderstandings between workers and owners. With ASTARTE, you can
+                ensure everyone is on the same page.</p>
+            <a href="#features" class="btn scroll-link">Learn More</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us" id="about-us">
+            <h2>About Us</h2>
+            <p>ASTARTE is a team of experts committed to providing a solution to the miscommunication and
+                tracking/monitoring problems in tomato farms. Our product is designed to maximize communication between
+                workers and owners, and keep everyone updated about the farm's status constantly.</p>
+            <div class="team">
+                <div class="team-member">
+                    <img src="eren.png" alt="Eren Geniş">
+                    <h3>Ahmet Eren Geniş</h3>
+                    <p>Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="orhun.jpeg" alt="Orhun Köse">
+                    <h3>Mustafa Orhun Köse</h3>
+                    <p>Project Controller</p>
+                </div>
+                <div class="team-member">
+                    <img src="nuray.jpeg" alt="Nuray Akar">
+                    <h3>Nuray Akar</h3>
+                    <p>Project Coordinator</p>
+                </div>
+                <div class="team-member">
+                    <img src="aylin.jpeg" alt="Aylin Topçu">
+                    <h3>Aylin Topçu</h3>
+                    <p>Code Curator</p>
+                </div>
+                <div class="team-member">
+                    <img src="kursat.jpeg" alt="Kürşat Kaya">
+                    <h3>Kürşat Kaya</h3>
+                    <p>Technical Communicator</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="features">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="https://via.placeholder.com/500x500/808080/FFFFFF?text=Placeholder" alt="Feature 1">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Real-Time Task Management</h3>
+                        <p>Assign tasks to workers and monitor their progress in real time, so you can ensure everything
+                            is
+                            on schedule.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="https://via.placeholder.com/500x500/808080/FFFFFF?text=Placeholder" alt="Feature 2">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Instant Communication</h3>
+                        <p>Our product ensures everyone is on the same page by enabling instant communication between
+                            workers and owners.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="https://via.placeholder.com/500x500/808080/FFFFFF?text=Placeholder" alt="Feature 3">
+                    </div>
+                    <div class="feature-content">
+                        <h3>BLANK</h3>
+                        <p>SOMETHING SOMETHING.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-plate">
+                    <div class="tech-plate-image">
+                        <img src="flutter.png" alt="Flutter">
+                    </div>
+                    <div class="tech-plate-content">
+                        Flutter
+                    </div>
+                </div>
+                <div class="tech-plate">
+                    <div class="tech-plate-image">
+                        <img src="django.png" alt="Django">
+                    </div>
+                    <div class="tech-plate-content">
+                        Django
+                    </div>
+                </div>
+                <div class="tech-plate">
+                    <div class="tech-plate-image">
+                        <img src="firebase.png" alt="Firebase">
+                    </div>
+                    <div class="tech-plate-content">
+                        Firebase
+                    </div>
+                </div>
+                <div class="tech-plate">
+                    <div class="tech-plate-image">
+                        <img src="git.png" alt="Git">
+                    </div>
+                    <div class="tech-plate-content">
+                        Git/GitLab 
+                    </div>
+                </div>
+                <div class="tech-plate">
+                    <div class="tech-plate-image">
+                        <img src="docker.png" alt="Docker">
+                    </div>
+                    <div class="tech-plate-content">
+                        Docker
+                    </div>
+                </div>
+            </div>
+            <h2>How It Works</h2>
+            TO BE FILLED
+
+        </section>
+
+        <section class="contact-us" id="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 ASTARTE</p>
+    </footer>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('a.scroll-link').click(function (e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 60
+            }, 1000); // 1000 milliseconds = 1 second
+        });
+    });
+
+</script>
+
+</html>

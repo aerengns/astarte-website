@@ -1,0 +1,357 @@
+/* Colors */
+:root {
+    --color-magenta: #FF0090;
+    --color-grey: #d0d0d0;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-red: rgb(211, 47, 47);
+    --color-green: rgb(23, 199, 23);
+    --color-yellow: rgb(224, 206, 11);
+    --color-orange: #E67E22;
+    --color-krem: #feeeca;
+    --color-light-orange: rgb(246, 157, 123);
+    --color-pink: rgba(250, 101, 101, 0.68);
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-grey);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--color-yellow);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #F1C40F;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-orange);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-black);
+    background-color: var(--color-krem);
+}
+
+/* Header */
+.hero {
+    height: 100vh;
+    background-image: url('tomatoes.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--color-green);
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: var(--color-grey);
+    max-width: 80%;
+}
+
+.hero a {
+
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--color-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 2rem;
+}
+
+section p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #888;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.tech-plate {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-plate-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    
+}
+
+.tech-plate-content {
+    padding: 2rem;
+    flex-grow: 1;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.step {
+    flex-basis: 30%;
+    text-align: center;
+    flex-direction: row;
+}
+
+.step h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.step p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.feature {
+    background-color: var(--color-pink);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-image img {
+    max-width: 100%;
+}
+
+.feature-content {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.feature-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Us */
+.contact-us {
+    margin-bottom: 4rem;
+}
+
+.contact-us form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-us label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-us button[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-light-orange);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-us button[type="submit"]:hover {
+    background-color: var(--color-orange);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 2rem;
+    }
+
+    .features {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    @media screen and (max-width: 480px) {
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .step {
+            flex-basis: 100%;
+        }
+
+        .features {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        footer {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
