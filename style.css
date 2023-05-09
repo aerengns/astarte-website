@@ -266,7 +266,7 @@ footer {
 /* Lazy Load */
 .lazy-load {
     opacity: 0;
-    transition: opacity 1.0s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 
@@ -307,17 +307,24 @@ footer {
         font-size: 1.2rem;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 400px) {
         .hero h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         .hero p {
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
 
         .hero a{
             font-size: 1rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+        }
+        section p{
+            font-size: 0.8rem;
         }
 
         .features {
