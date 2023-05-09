@@ -69,7 +69,7 @@ body {
 /* Header */
 .hero {
     height: 100vh;
-    background-image: url('tomatoes.jpg');
+    background:  linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('tomatoes.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
