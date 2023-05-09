@@ -31,7 +31,7 @@
 
         <section id="features">
             <h2>Features</h2>
-            <div class="features">
+            <div class="features lazy-load">
                 <div class="feature">
                     <div class="feature-image">
                         <img src="https://via.placeholder.com/500x500/808080/FFFFFF?text=Placeholder" alt="Feature 1">
@@ -65,7 +65,9 @@
             </div>
         </section>
 
-        <section class="how-it-works" id="how-it-works">
+        <section class="how-it-works lazy-load" id="how-it-works">
+            <h2>How It Works</h2>
+            TO BE FILLED
             <h2>Tech Stack</h2>
             <div class="tech-stack">
                 <div class="tech-plate">
@@ -109,12 +111,9 @@
                     </div>
                 </div>
             </div>
-            <h2>How It Works</h2>
-            TO BE FILLED
 
         </section>
-        <div class="lazy-load">
-            <section class="about-us" id="about-us">
+            <section class="about-us lazy-load" id="about-us">
                 <h2>About Us</h2>
                 <p>ASTARTE is a team of experts committed to providing a solution to the miscommunication and
                     tracking/monitoring problems in tomato farms. Our product is designed to maximize communication
@@ -148,9 +147,7 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <div class="lazy-load">
-            <section class="contact-us" id="contact-us">
+            <section class="contact-us lazy-load" id="contact-us">
                 <h2>Contact Information</h2>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
@@ -162,7 +159,6 @@
                         Çankaya</span>
                 </div>
             </section>
-        </div>
     </main>
 
     <footer>
@@ -188,7 +184,7 @@
         lazyLoadDivs.forEach((lazyLoadDiv) => {
             if (lazyLoadDiv.getBoundingClientRect().top < window.innerHeight) {
                 // Remove the "lazy-load" class to trigger the content to load
-                lazyLoadDiv.classList.remove('lazy-load');
+                lazyLoadDiv.style.opacity = "1";
             }
         });
     }
