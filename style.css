@@ -34,6 +34,7 @@ a {
 
 a:hover {
     color: var(--color-yellow);
+    cursor: url(minimal-tomato-pointer.png), auto;
 }
 
 .btn {
@@ -52,6 +53,7 @@ a:hover {
 
 .btn:hover {
     background-color: var(--color-orange);
+    cursor: url(minimal-tomato-pointer.png), auto;
 }
 
 body {
@@ -60,6 +62,8 @@ body {
     line-height: 1.5;
     color: var(--color-black);
     background-color: var(--color-krem);
+    height: 100%;
+    cursor: url(minimal-tomato-cursor.png), auto;
 }
 
 /* Header */
@@ -179,7 +183,7 @@ section p {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    
+
 }
 
 .tech-plate-content {
@@ -259,43 +263,6 @@ section p {
     margin-bottom: 4rem;
 }
 
-.contact-us form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact-us label {
-    font-weight: bold;
-    text-align: left;
-}
-
-.contact-us input,
-.contact-us textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-us button[type="submit"] {
-    padding: 0.5rem 1rem;
-    background-color: var(--color-light-orange);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.contact-us button[type="submit"]:hover {
-    background-color: var(--color-orange);
-}
-
-
 /* Footer */
 footer {
     background-color: var(--color-black);
@@ -305,6 +272,29 @@ footer {
     align-items: center;
     padding: 2rem;
 }
+
+/* Parallax Scrolling */
+.parallax {
+    /* The image used */
+    background-image: url('tomatoes.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Lazy Load */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
