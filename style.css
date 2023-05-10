@@ -321,7 +321,7 @@ section p {
 }
 
 .olcards li .content {
-    animation: grow 0.7s ease-out;
+    animation: grow 1s ease-out;
     transform-origin: left;
   background-color: var(--cardColor);
   --inlinePadding: 1em;
