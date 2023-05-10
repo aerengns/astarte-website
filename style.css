@@ -247,7 +247,20 @@ section p {
 
 /* Contact Us */
 .contact-us {
-    margin-bottom: 4rem;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Footer */
@@ -280,6 +293,16 @@ footer {
 .lazy-load {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
+}
+
+a[href^="mailto:"]
+{ 
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+a[href^="mailto:"]:hover
+{ 
+  color: red;
 }
 
 
