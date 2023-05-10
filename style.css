@@ -361,6 +361,14 @@ a[href^="mailto:"]:hover {
         min-height: 350px;
     }
 
+    .feature-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-content p {
+        font-size: 1rem;
+    }
+
     .team {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -413,6 +421,14 @@ a[href^="mailto:"]:hover {
 
         .feature-content {
             min-height: 250px;
+        }
+
+        .feature-content h3 {
+            font-size: 1rem;
+        }
+    
+        .feature-content p {
+            font-size: 0.8rem;
         }
 
         .team {
