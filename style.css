@@ -184,7 +184,7 @@ section p {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 80%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .tech-plate {
@@ -358,7 +358,7 @@ a[href^="mailto:"]:hover {
     }
 
     .feature-content {
-        min-height: 250px;
+        min-height: 350px;
     }
 
     .team {
@@ -412,7 +412,7 @@ a[href^="mailto:"]:hover {
         }
 
         .feature-content {
-            min-height: 150px;
+            min-height: 250px;
         }
 
         .team {
