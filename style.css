@@ -281,6 +281,17 @@ section p {
     }
   }
   
+.another-load {
+    /* Initialize the element state for the animation */
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.another-load.animate {
+    /* Start the animation when the animate class is added */
+    animation: grow 0.7s ease-out forwards;
+}
+
 .olcards,
 .olcards * {
   margin: 0;

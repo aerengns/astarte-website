@@ -362,6 +362,23 @@
                 scrollTop: $(target).offset().top - 60
             }, 1000); // 1000 milliseconds = 1 second
         });
+        /* Intersection Observer */
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        const contents = document.querySelectorAll('.olcards li .content');
+        contents.forEach((content) => {
+            observer.observe(content);
+        });
     });
 
     /* Lazy Load */
@@ -376,7 +393,24 @@
         });
     }
 
+    /* Another Load */
+    function anotherLoad() {
+        const anotherLoadDivs = document.querySelectorAll('.another-load');
+
+        anotherLoadDivs.forEach((anotherLoadDiv) => {
+            const rect = anotherLoadDiv.getBoundingClientRect();
+            const isInViewport = rect.top < window.innerHeight && rect.bottom >= 0;
+            
+            if (isInViewport) {
+                anotherLoadDiv.classList.add('animate');
+            } else {
+                anotherLoadDiv.classList.remove('animate');
+            }
+        });
+    }
+
     window.addEventListener('scroll', lazyLoad);
+    window.addEventListener('scroll', anotherLoad);
 
     const features = document.querySelectorAll('.feature');
     const modals = document.querySelectorAll('.modal');
