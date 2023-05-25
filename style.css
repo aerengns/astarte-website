@@ -296,7 +296,7 @@ section p {
 .olcards * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .olcards {
@@ -341,9 +341,6 @@ section p {
   display: grid;
   padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
     var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
-  grid-template-areas:
-    "icon title"
-    "icon text";
   gap: 0.25em 1em;
   clip-path: polygon(
     0 0,
@@ -382,14 +379,9 @@ section p {
   font-size: 2em;
 }
 .olcards li .content .title {
-  grid-area: title;
   font-size: 1.25em;
   /* font-weight: 700; */
 }
-.olcards li .content .text {
-  grid-area: text;
-}
-
 /* Contact Us */
 .contact-us {
     padding: 2rem;
