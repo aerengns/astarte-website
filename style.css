@@ -10,7 +10,7 @@
     --color-orange: #E67E22;
     --color-krem: #feeeca;
     --color-light-orange: rgb(246, 157, 123);
-    --color-pink: rgba(250, 101, 101, 0.68);
+    --color-pink: rgb(250, 101, 101);
 }
 
 /* Fonts */
@@ -112,7 +112,7 @@ nav {
 
 
 main {
-    max-width: 1750px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -258,6 +258,7 @@ section p {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-black);
+    background-color: rgba(250, 101, 101, 0.624);
 }
 
 .feature-content p {
