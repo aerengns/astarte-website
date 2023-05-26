@@ -405,13 +405,6 @@ section p {
     flex-grow: 1;
 }
 
-.contact-us h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-black);
-    margin-bottom: 1rem;
-}
-
 .contact-us h3 {
     text-align:center;
    
